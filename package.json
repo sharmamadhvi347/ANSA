@@ -1,0 +1,44 @@
+{
+  "name": "meshmend",
+  "version": "1.0.0",
+  "description": "MeshMend AI — AI-powered FE mesh quality correction IDE",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite --config vite.config.ts\" \"tsc -p electron/tsconfig.json --watch\"",
+    "dev:vite": "vite --config vite.config.ts",
+    "build": "vite build --config vite.config.ts && tsc -p electron/tsconfig.json",
+    "electron": "electron dist-electron/main.js",
+    "start": "npm run build && npm run electron",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "mesh",
+    "FEA",
+    "CAE",
+    "quality",
+    "ANSA",
+    "nastran",
+    "abaqus"
+  ],
+  "author": "MeshMend AI",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^36.9.5",
+    "openai": "^7.8.0",
+    "opencascade.js": "^1.1.1",
+    "three": "^0.173.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "@types/three": "^0.173.0",
+    "concurrently": "^9.1.2",
+    "electron-builder": "^26.0.12",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-top-level-await": "^1.6.0",
+    "vite-plugin-wasm": "^3.6.0",
+    "vitest": "^3.2.1"
+  }
+}

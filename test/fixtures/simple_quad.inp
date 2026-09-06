@@ -1,0 +1,26 @@
+*HEADING
+MeshMend Test Mesh - Simple Quad Shell
+**
+** NODES
+**
+*NODE
+1, 0.0, 0.0, 0.0
+2, 1.0, 0.0, 0.0
+3, 2.0, 0.0, 0.0
+4, 0.0, 1.0, 0.0
+5, 1.0, 1.0, 0.0
+6, 2.0, 1.0, 0.0
+7, 0.0, 2.0, 0.0
+8, 1.0, 2.0, 0.0
+9, 2.0, 2.0, 0.0
+**
+** ELEMENTS
+**
+*ELEMENT, TYPE=S4R, ELSET=SHELL_PART
+1, 1, 2, 5, 4
+2, 2, 3, 6, 5
+3, 4, 5, 8, 7
+4, 5, 6, 9, 8
+**
+** END OF MODEL DATA
+**

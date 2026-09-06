@@ -1,0 +1,11 @@
+node_modules/
+dist/
+sidecar/venv/
+__pycache__/
+*.pyc
+.env
+*.log
+scratch/
+build/
+.DS_Store
+sidecar/work/
